@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMEA Security Roadshow - Knowledge Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/Logo-Red_Hat-C-Standard-RGB.svg" alt="Red Hat Logo" class="red-hat-logo">
+                <div class="logo-section">
+                    <h1>EMEA Security Roadshow</h1>
+                    <h2>Knowledge Check</h2>
+                </div>
+                <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </header>
+
+        <main id="quiz-container">
+            <!-- Welcome Screen -->
+            <div id="welcome-screen" class="screen active">
+                <div class="welcome-content">
+                    <h3>Test Your Product Security Knowledge</h3>
+                    <div class="session-filter">
+                        <label><strong>Filter by Session (Optional):</strong></label>
+                        <p class="filter-hint">Select one or more sessions, or leave all unchecked for all sessions</p>
+                        <div id="session-checkboxes" class="session-checkboxes">
+                            <!-- Checkboxes will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="quiz-info">
+                        <p><strong>Format:</strong> 15 randomly selected multiple choice questions</p>
+                        <p><strong>Passing Score:</strong> 70% (11 out of 15 correct)</p>
+                        <p><strong>Time:</strong> No time limit - take your time!</p>
+                    </div>
+                    <div class="welcome-actions">
+                        <button id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+                        <button id="view-leaderboard-welcome-btn" class="btn btn-secondary">🏆 View Leaderboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="question-counter">
+                    Question <span id="current-question">1</span> of <span id="total-questions">15</span>
+                </div>
+
+                <div id="question-container">
+                    <div class="session-badge" id="session-badge"></div>
+                    <div class="question-header">
+                        <h3 id="question-text"></h3>
+                        <div class="hint-container">
+                            <span class="hint-icon" title="Show hint">💡</span>
+                            <div class="hint-tooltip" id="hint-tooltip"></div>
+                        </div>
+                    </div>
+                    <div id="options-container" class="options-container"></div>
+                </div>
+
+                <div class="quiz-navigation">
+                    <button id="next-btn" class="btn btn-primary" style="display: none;">Next Question</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <div class="results-content">
+                    <div id="results-header">
+                        <h3 id="results-title"></h3>
+                        <div id="score-display" class="score-display"></div>
+                    </div>
+
+                    <div id="results-message" class="results-message"></div>
+
+                    <div id="results-breakdown" class="results-breakdown">
+                        <h4>Session Breakdown</h4>
+                        <div id="session-scores"></div>
+                    </div>
+
+                    <div id="certificate-section" class="certificate-section" style="display: none;">
+                        <div class="certificate-download">
+                            <label for="certificate-name">Enter your name for the certificate (optional):</label>
+                            <input type="text" id="certificate-name" placeholder="Your Name" class="certificate-input">
+
+                            <div class="leaderboard-opt-in">
+                                <input type="checkbox" id="leaderboard-opt-in" class="leaderboard-checkbox">
+                                <label for="leaderboard-opt-in">Add my score to the leaderboard (optional)</label>
+                            </div>
+
+                            <button id="download-certificate-btn" class="btn btn-primary">📄 Download Certificate</button>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <button id="retake-btn" class="btn btn-primary">Take Another Quiz</button>
+                        <button id="review-btn" class="btn btn-secondary">Review Answers</button>
+                        <button id="view-leaderboard-btn" class="btn btn-secondary">View Leaderboard</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard Screen -->
+            <div id="leaderboard-screen" class="screen">
+                <div class="leaderboard-content">
+                    <h3>🏆 Leaderboard - Top Scores</h3>
+                    <p class="leaderboard-subtitle">Only passing scores (70%+) are displayed</p>
+
+                    <div id="leaderboard-container" class="leaderboard-container">
+                        <div class="loading-message">Loading leaderboard...</div>
+                    </div>
+
+                    <div class="leaderboard-actions">
+                        <button id="back-from-leaderboard-btn" class="btn btn-secondary">Back to Results</button>
+                        <button id="back-to-welcome-btn" class="btn btn-secondary">Back to Welcome</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Screen -->
+            <div id="review-screen" class="screen">
+                <div class="review-content">
+                    <h3>Answer Review</h3>
+                    <div id="review-container"></div>
+                    <button id="back-to-results-btn" class="btn btn-secondary">Back to Results</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Red Hat Product Security - EMEA Security Roadshow 2026</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

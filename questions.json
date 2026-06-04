@@ -1,0 +1,1771 @@
+{
+  "quiz_title": "EMEA Security Roadshow Knowledge Check",
+  "quiz_subtitle": "Test your knowledge of Red Hat Product Security",
+  "passing_score": 70,
+  "questions": [
+    {
+      "id": 1,
+      "session": "Product Security as a Value Driver",
+      "question": "Why does Red Hat prioritize fixing 'important' and 'critical' vulnerabilities rather than patching every single 'low' and 'moderate' flaw?",
+      "options": [
+        "Because fixing every minor issue introduces unnecessary risk through system instability and code churn",
+        "Because Red Hat doesn't have enough engineers to fix all vulnerabilities",
+        "Because low and moderate vulnerabilities never get exploited",
+        "Because customers don't care about security updates"
+      ],
+      "correct_answer": 0,
+      "explanation": "Fixing every minor issue introduces unnecessary risk through system instability and code churn. This approach helps maintain system stability while focusing on the most impactful vulnerabilities.",
+      "hint": "Consider what happens when you introduce too many unnecessary changes."
+    },
+    {
+      "id": 2,
+      "session": "Product Security as a Value Driver",
+      "question": "Due to the increasing use of AI, what is the projected number of global Common Vulnerabilities and Exposures (CVEs) expected to be discovered in 2026?",
+      "options": [
+        "50,000 CVEs",
+        "75,000 CVEs",
+        "100,000 CVEs",
+        "150,000 CVEs"
+      ],
+      "correct_answer": 2,
+      "explanation": "The projection is for 100,000 CVEs in 2026, representing a significant explosion in vulnerability discoveries driven by AI-assisted vulnerability detection.",
+      "hint": "Think of a six-figure number representing a massive increase."
+    },
+    {
+      "id": 3,
+      "session": "Product Security as a Value Driver",
+      "question": "Despite the rapid discovery of thousands of software vulnerabilities, what was the actual known exploitation rate of vulnerabilities affecting Red Hat products last year?",
+      "options": [
+        "5.2%",
+        "1.52%",
+        "0.16%",
+        "0.03%"
+      ],
+      "correct_answer": 2,
+      "explanation": "Only 0.16% of all vulnerabilities discovered were actually known to be exploited in the wild, demonstrating that while CVE counts are high, actual exploitation remains very low.",
+      "hint": "It's a tiny fraction of one percent."
+    },
+    {
+      "id": 5,
+      "session": "Product Security as a Value Driver",
+      "question": "What percentage of all Red Hat deals require completion of security checks and validations?",
+      "options": [
+        "Approximately 50%",
+        "Approximately 75%",
+        "Approximately 90%",
+        "Nearly 100%"
+      ],
+      "correct_answer": 3,
+      "explanation": "Nearly 100% of all deals require completion of security checks and validations through security vendor questionnaires, third party supplier audits, and contract addendums.",
+      "hint": "Nearly every deal has this requirement."
+    },
+    {
+      "id": 6,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How long does a Secure Architecture Review (SAR) take under Red Hat's new Agentic SDLC workflow?",
+      "options": [
+        "Approximately 2 hours, down from 1 to 4 weeks",
+        "Approximately 1 day, down from 1 to 4 weeks",
+        "Approximately 20 minutes, down from 1 to 4 weeks",
+        "Approximately 50 minutes, down from 2 to 4 hours"
+      ],
+      "correct_answer": 2,
+      "explanation": "The SAR has been reduced to approximately 20 minutes (19 minutes specifically), down from 1 to 4 weeks, demonstrating the dramatic time savings of agentic workflows.",
+      "hint": "The time is measured in minutes, not hours or weeks."
+    },
+    {
+      "id": 7,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "Implementing a secure Software Development Life Cycle (SDLC) is considered a strict regulatory requirement under which upcoming European act?",
+      "options": [
+        "The Digital Operational Resilience Act (DORA)",
+        "The EU Cyber Resilience Act (CRA)",
+        "The Network and Information Security Directive (NIS2)",
+        "The EU AI Act"
+      ],
+      "correct_answer": 1,
+      "explanation": "The EU Cyber Resilience Act (CRA) is the major European regulation that categorizes software vendors as 'manufacturers' and requires secure SDLC practices.",
+      "hint": "This European regulation treats software vendors as manufacturers."
+    },
+    {
+      "id": 8,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How long did Threat Modeling take manually compared to using agentic workflows?",
+      "options": [
+        "2-4.5 hours manually vs. ~50 minutes with agentic workflows",
+        "1-2 days manually vs. ~2 hours with agentic workflows",
+        "6 hours manually vs. ~84 seconds with agentic workflows",
+        "1-4 weeks manually vs. ~19 minutes with agentic workflows"
+      ],
+      "correct_answer": 0,
+      "explanation": "Threat Modeling took 2 to 4.5 hours manually but only approximately 50 minutes using agentic workflows, showing significant time savings.",
+      "hint": "Think about how long threat modeling traditionally takes."
+    },
+    {
+      "id": 9,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What is a key principle behind Red Hat's automated agentic workflows for security?",
+      "options": [
+        "Complete automation with no human involvement",
+        "Automation at scale with human oversight",
+        "Manual review of every security finding",
+        "AI-only decision making without validation"
+      ],
+      "correct_answer": 1,
+      "explanation": "The key principle is automation at scale with human oversight. Human validation remains critical in the automated workflow.",
+      "hint": "Consider the balance between automation and oversight."
+    },
+    {
+      "id": 10,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "Under Red Hat's vulnerability management transparency guidelines, within what timeframe is vulnerability data published after it becomes public?",
+      "options": [
+        "Within 12 hours",
+        "Within 24 hours",
+        "Within 48 hours",
+        "Within 1 week"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat publishes vulnerability data within 24 hours after it becomes public, demonstrating commitment to transparency.",
+      "hint": "Red Hat publishes data very quickly after it becomes public."
+    },
+    {
+      "id": 11,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "Why does Red Hat often differ from the standard industry practice of a one-to-one mapping between base CVSS scores and severity ratings?",
+      "options": [
+        "Red Hat uses a different scoring system than CVSS",
+        "Red Hat performs expert product-specific analysis that takes into account environmental mitigations and how the software is compiled and built",
+        "Red Hat always rates vulnerabilities higher than the base CVSS score",
+        "Red Hat doesn't use severity ratings"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat performs expert product-specific analysis that considers environmental mitigations and how the software is compiled, packaged, and deployed, providing more accurate risk assessment.",
+      "hint": "Red Hat considers how the software is actually built and configured."
+    },
+    {
+      "id": 12,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "Why does Red Hat isolate security fixes and backport them into older packages instead of just upgrading to the newest version?",
+      "options": [
+        "To save development time",
+        "To preserve API and ABI stability and prevent downtime for customers",
+        "Because customers prefer older software versions",
+        "To reduce the number of security updates needed"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat backports security fixes to preserve API and ABI stability and prevent downtime for customers, maintaining system stability without forcing major version upgrades.",
+      "hint": "Think about maintaining system stability without major upgrades."
+    },
+    {
+      "id": 13,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "In what format does Red Hat publish vulnerability data to enable automated scanning applications?",
+      "options": [
+        "PDF and Word documents",
+        "Standard machine-readable CSAF and VEX profiles",
+        "Excel spreadsheets",
+        "Plain text files"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat publishes vulnerability data in standard, machine-readable CSAF and VEX (Vulnerability Exploitability eXchange) profiles to enable automated DevSecOps pipelines.",
+      "hint": "The format enables automated tools to work with certainty."
+    },
+    {
+      "id": 14,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What is Red Hat's severity rating for a vulnerability that allows remote unauthenticated users to execute arbitrary code without user interaction?",
+      "options": [
+        "Important",
+        "Critical",
+        "Moderate",
+        "High"
+      ],
+      "correct_answer": 1,
+      "explanation": "Critical severity is assigned to vulnerabilities where a remote unauthenticated user can execute arbitrary code without requiring user interaction (e.g., worms).",
+      "hint": "This is the highest severity level for the most dangerous vulnerabilities."
+    },
+    {
+      "id": 15,
+      "session": "Project Lightwell",
+      "question": "What is the primary goal of Project Lightwell?",
+      "options": [
+        "To replace all third-party dependencies with Red Hat code",
+        "To provide security support and backport fixes for application dependencies that are outside of Red Hat's current product portfolio",
+        "To scan for vulnerabilities in customer applications",
+        "To create a new package management system"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell provides security support and backport fixes for application dependencies outside of Red Hat's current product portfolio, helping customers secure their custom software.",
+      "hint": "Think about custom application dependencies outside standard products."
+    },
+    {
+      "id": 16,
+      "session": "Project Lightwell",
+      "question": "Which programming language ecosystem is the initial focus for Project Lightwell's remediation efforts?",
+      "options": [
+        "Python",
+        "JavaScript/Node.js",
+        "Java",
+        "Go"
+      ],
+      "correct_answer": 2,
+      "explanation": "Java is the initial focus for Project Lightwell, as it is the primary language used in many legacy enterprise and financial applications.",
+      "hint": "This is the primary language for many enterprise applications."
+    },
+    {
+      "id": 17,
+      "session": "Project Lightwell",
+      "question": "What comprehensive documentation must customers maintain and understand about their software stack to receive value from Project Lightwell?",
+      "options": [
+        "A Configuration Management Database (CMDB)",
+        "A Software Bill of Materials (SBOM)",
+        "A Vulnerability Assessment Report (VAR)",
+        "A Risk Register"
+      ],
+      "correct_answer": 1,
+      "explanation": "A Software Bill of Materials (SBOM) is an inventory list of all the components and dependencies in software, essential for Project Lightwell to provide effective support.",
+      "hint": "It's an inventory of all software components."
+    },
+    {
+      "id": 18,
+      "session": "Project Lightwell",
+      "question": "Project Lightwell's tagline emphasizes which two key capabilities?",
+      "options": [
+        "Manual review and compliance reporting",
+        "AI-driven remediation and enterprise-grade patching",
+        "Automated testing and continuous integration",
+        "Cloud migration and containerization"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell's tagline is 'Secure your open source supply chain with AI-driven remediation and enterprise-grade patching.'",
+      "hint": "The tagline emphasizes both AI capabilities and enterprise quality."
+    },
+    {
+      "id": 19,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "By what exact date will the Cyber Resilience Act (CRA) become a mandatory requirement to sell software in the EU market?",
+      "options": [
+        "September 11, 2026",
+        "January 17, 2027",
+        "December 11, 2027",
+        "January 1, 2028"
+      ],
+      "correct_answer": 2,
+      "explanation": "December 11, 2027 is the mandatory deadline for CRA compliance to sell software in the EU market.",
+      "hint": "Late 2027 is the mandatory deadline."
+    },
+    {
+      "id": 20,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "The Digital Operational Resilience Act (DORA) creates a comprehensive IT risk management framework specifically for which sector?",
+      "options": [
+        "The healthcare sector",
+        "The financial sector",
+        "The energy sector",
+        "The telecommunications sector"
+      ],
+      "correct_answer": 1,
+      "explanation": "DORA creates a comprehensive IT risk management framework specifically for the financial sector, covering all 20 kinds of financial entities.",
+      "hint": "Think about banks and financial institutions."
+    },
+    {
+      "id": 21,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What are the names of the two open-source projects Red Hat is developing to enable automated, continuous compliance?",
+      "options": [
+        "AutoComply and RegFlow",
+        "Comply Time and Jamara",
+        "ComplianceOS and RegCheck",
+        "AuditBot and PolicyEngine"
+      ],
+      "correct_answer": 1,
+      "explanation": "Comply Time and Jamara are Red Hat's open-source projects for enabling automated, continuous compliance.",
+      "hint": "Two open-source projects working on automation."
+    },
+    {
+      "id": 22,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "When do the CRA vulnerability reporting requirements begin?",
+      "options": [
+        "January 17, 2026",
+        "September 11, 2026",
+        "December 11, 2026",
+        "January 1, 2027"
+      ],
+      "correct_answer": 1,
+      "explanation": "CRA vulnerability reporting requirements begin on September 11, 2026, before the full mandatory compliance date.",
+      "hint": "This is when reporting starts, before full compliance."
+    },
+    {
+      "id": 23,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "Approximately how many people are on Red Hat's GRC team to handle compliance across all products?",
+      "options": [
+        "Approximately 10 people",
+        "Approximately 20 people",
+        "Approximately 30 people",
+        "Approximately 50 people"
+      ],
+      "correct_answer": 2,
+      "explanation": "Red Hat's GRC team consists of approximately 30 people who handle compliance across the entire Global Engineering organization.",
+      "hint": "Approximately 30 people handle all compliance work."
+    },
+    {
+      "id": 24,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What is the implementation deadline for DORA in the financial sector?",
+      "options": [
+        "December 11, 2026",
+        "January 17, 2025",
+        "September 11, 2026",
+        "January 1, 2026"
+      ],
+      "correct_answer": 1,
+      "explanation": "The implementation deadline for DORA is January 17, 2025, making it one of the earliest compliance deadlines in the European regulatory landscape.",
+      "hint": "Early 2025 for the financial sector."
+    },
+    {
+      "id": 25,
+      "session": "Digital Sovereignty",
+      "question": "Within Red Hat's four pillars of Digital Sovereignty, what does the 'Technical Sovereignty' pillar ensure?",
+      "options": [
+        "It ensures all data is encrypted at rest and in transit",
+        "It ensures customers own their technology stack and can run workloads without dependence on a specific provider's infrastructure",
+        "It ensures compliance with all European regulations",
+        "It ensures only EU citizens can access the systems"
+      ],
+      "correct_answer": 1,
+      "explanation": "Technical Sovereignty ensures customers own their technology stack and can run workloads without dependence on a specific provider's infrastructure, enabling true workload portability.",
+      "hint": "Customers control their stack without provider dependence."
+    },
+    {
+      "id": 26,
+      "session": "Digital Sovereignty",
+      "question": "Instead of advising customers to completely exit hyperscalers like AWS or Azure, what alternative strategy does Red Hat advocate?",
+      "options": [
+        "A multi-cloud strategy with redundant deployments",
+        "A portability strategy using technologies like OpenShift to avoid lock-in",
+        "A hybrid cloud approach with on-premises backup",
+        "A complete migration to sovereign cloud providers only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat advocates for a portability strategy using technologies like OpenShift to avoid lock-in, enabling customers to easily move workloads between different environments.",
+      "hint": "Think about moving workloads between different environments."
+    },
+    {
+      "id": 27,
+      "session": "Digital Sovereignty",
+      "question": "What is the projected global sovereign cloud market value by 2027, and what is Europe's share?",
+      "options": [
+        "$150 Billion global market, Europe holds 30% share",
+        "$200 Billion global market, Europe holds 25% share",
+        "$250 Billion global market, Europe holds 23% share",
+        "$300 Billion global market, Europe holds 20% share"
+      ],
+      "correct_answer": 2,
+      "explanation": "The projected global sovereign cloud market is $250 Billion by 2027, with Europe holding a 23% share (approximately $57.5 Billion).",
+      "hint": "Quarter of a trillion dollars globally."
+    },
+    {
+      "id": 28,
+      "session": "Digital Sovereignty",
+      "question": "What percentage of CIOs are planning to increase use of local cloud providers due to sovereignty concerns?",
+      "options": [
+        "45%",
+        "53%",
+        "61%",
+        "72%"
+      ],
+      "correct_answer": 2,
+      "explanation": "61% of CIOs are planning to increase use of local cloud providers due to sovereignty concerns, demonstrating strong market demand for sovereign solutions.",
+      "hint": "More than half of CIOs have sovereignty concerns."
+    },
+    {
+      "id": 29,
+      "session": "Digital Sovereignty",
+      "question": "According to the session, what happened to Amsterdam Trade Bank that illustrates sovereignty risks?",
+      "options": [
+        "The bank was hacked due to inadequate security",
+        "Microsoft and Amazon yanked email/cloud access due to US sanctions, placing the bank in bankruptcy despite being solvent",
+        "The bank lost customer data in a cloud provider outage",
+        "Regulatory fines forced the bank to close operations"
+      ],
+      "correct_answer": 1,
+      "explanation": "Microsoft and Amazon yanked email/cloud access due to US sanctions, placing the bank in bankruptcy despite being 'solvent and healthy,' demonstrating operational vulnerability to US tech provider decisions.",
+      "hint": "A cloud provider made a critical mistake affecting banking customers."
+    },
+    {
+      "id": 30,
+      "session": "Digital Sovereignty",
+      "question": "What are the four dimensions of Digital Sovereignty in Red Hat's framework (from base to apex of the pyramid)?",
+      "options": [
+        "Technical, Data, Operational, Assurance",
+        "Data, Technical, Operational, Assurance",
+        "Assurance, Operational, Technical, Data",
+        "Operational, Data, Technical, Assurance"
+      ],
+      "correct_answer": 1,
+      "explanation": "The four dimensions from base to apex are: Data Sovereignty (foundation), Technical Sovereignty, Operational Sovereignty, and Assurance Sovereignty (top).",
+      "hint": "The four levels build from data up to assurance."
+    },
+    {
+      "id": 31,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What are the core geographic and citizenship requirements for engineers providing Confirmed Sovereign Support (CSS) in Europe?",
+      "options": [
+        "They must be NATO country citizens operating in Europe",
+        "They must be EU citizens operating exclusively on EU soil",
+        "They must be European citizens with security clearances",
+        "They must be based in a single EU country"
+      ],
+      "correct_answer": 1,
+      "explanation": "CSS-EU engineers must be citizens of EU member countries operating exclusively on EU soil. It's EU-wide, not country-specific.",
+      "hint": "EU citizens working only in the EU."
+    },
+    {
+      "id": 32,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Where does customer uploaded data, such as diagnostic logs and 'sosreports', reside under the Confirmed Sovereign Support (CSS) model?",
+      "options": [
+        "It is replicated globally for redundancy",
+        "It remains entirely within cloud-based infrastructure in the EU",
+        "It is stored in encrypted form in US data centers",
+        "It is distributed across multiple regions"
+      ],
+      "correct_answer": 1,
+      "explanation": "Customer uploaded data remains entirely within cloud-based infrastructure in the EU and never leaves the boundaries of the European Union.",
+      "hint": "Data never leaves European territory."
+    },
+    {
+      "id": 33,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What tool do Confirmed Sovereign Support (CSS) engineers use to sanitize and obfuscate sensitive data before collaborating with global support engineers?",
+      "options": [
+        "The 'data-scrubber' tool",
+        "The 'sosclean' or 'sos-cleaner' tool",
+        "The 'redact-pro' tool",
+        "The 'privacy-guard' tool"
+      ],
+      "correct_answer": 1,
+      "explanation": "The 'sosclean' or 'sos-cleaner' tool thoroughly scrubs sensitive customer data, removes personally identifiable information, and reduces risk while preserving technical value.",
+      "hint": "The tool name suggests cleaning an SOS report."
+    },
+    {
+      "id": 34,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Following its launch in the European Union, which region is targeted next for the expansion of Confirmed Sovereign Support (CSS)?",
+      "options": [
+        "North America",
+        "Australia/New Zealand",
+        "Southeast Asia",
+        "Middle East"
+      ],
+      "correct_answer": 1,
+      "explanation": "Australia/New Zealand (APAC region) is targeted next for CSS expansion, which will help provide complete 24-hour global coverage.",
+      "hint": "This will enable 24-hour coverage globally."
+    },
+    {
+      "id": 35,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What is a key characteristic of CSS that differentiates it from standard support?",
+      "options": [
+        "It provides multilingual support in all EU languages",
+        "Engineers have security clearances from their governments",
+        "It blends high-touch TAM experience with proven GSS reliability and efficiency",
+        "It costs the same as standard support"
+      ],
+      "correct_answer": 2,
+      "explanation": "CSS blends high-touch TAM (Technical Account Manager) experience with proven GSS (Global Support Services) reliability and efficiency, offering a premium service level.",
+      "hint": "Think about TAM-quality service with GSS scale."
+    },
+    {
+      "id": 36,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Are CSS-EU engineers security cleared?",
+      "options": [
+        "Yes, all CSS engineers have top secret clearance",
+        "No, they are background checked only, not security cleared",
+        "Yes, they have EU-specific security clearances",
+        "Only senior CSS engineers have security clearances"
+      ],
+      "correct_answer": 1,
+      "explanation": "CSS-EU engineers are background checked (where legally allowed) but are NOT security cleared. This is an important distinction in the service offering.",
+      "hint": "Background checks, not security clearances."
+    },
+    {
+      "id": 37,
+      "session": "Product Security as a Value Driver",
+      "question": "How has AI impacted the time-to-exploit for vulnerabilities?",
+      "options": [
+        "AI has no impact on exploitation timelines",
+        "AI has increased the time needed to create exploits",
+        "AI has shrunk the buffer from weeks/months to minutes or 'negative days'",
+        "AI only helps defenders, not attackers"
+      ],
+      "correct_answer": 2,
+      "explanation": "AI models like Mythos can easily create novel exploits, shrinking the buffer that existed of weeks to months from discovery to exploitation down to minutes or 'negative days.'",
+      "hint": "AI has dramatically reduced the time to create exploits."
+    },
+    {
+      "id": 38,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What happens to vulnerabilities with known active exploits in Red Hat's workflow?",
+      "options": [
+        "They are treated the same as any other vulnerability",
+        "They are postponed until the next release cycle",
+        "Known exploits elevate the importance and urgency of vulnerabilities in existing workflows",
+        "They are automatically assigned Critical severity"
+      ],
+      "correct_answer": 2,
+      "explanation": "Known exploits elevate the importance and urgency of vulnerabilities in existing workflows, triggering expedited response regardless of initial severity rating.",
+      "hint": "Active exploitation changes priority regardless of initial severity."
+    },
+    {
+      "id": 39,
+      "session": "Digital Sovereignty",
+      "question": "Why can't US hyperscalers like Microsoft guarantee data sovereignty in Europe?",
+      "options": [
+        "They don't have data centers in Europe",
+        "European regulations prohibit US companies from operating there",
+        "The US Cloud Act gives the US government authority to access data held by US companies regardless of where it's stored",
+        "They choose not to provide such guarantees"
+      ],
+      "correct_answer": 2,
+      "explanation": "The US Cloud Act gives the US government authority to access data held by US companies regardless of where data is physically stored, preventing true data sovereignty guarantees.",
+      "hint": "US law allows government access regardless of data location."
+    },
+    {
+      "id": 40,
+      "session": "Digital Sovereignty",
+      "question": "What is the projected IT spending in Europe for 2026?",
+      "options": [
+        "$850 Billion",
+        "$1.15 Trillion",
+        "$1.43 Trillion",
+        "$2.1 Trillion"
+      ],
+      "correct_answer": 2,
+      "explanation": "$1.43 Trillion is the projected IT spending in Europe for 2026, representing a massive market opportunity for sovereign solutions.",
+      "hint": "Over a trillion dollars in European IT spending."
+    },
+    {
+      "id": 41,
+      "session": "Red Hat Hardened Images",
+      "question": "What is the primary purpose of Red Hat Hardened Images?",
+      "options": [
+        "To provide a paid enterprise container registry service",
+        "To reduce attack surface in containerized applications by providing micro-sized, trusted container images",
+        "To replace traditional virtual machines with containers",
+        "To provide a proprietary container format for Red Hat platforms only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images is a free, vendor-neutral catalog of trusted, micro-sized container images designed to reduce attack surface and security toil by moving security to the start of the build process.",
+      "hint": "Focus on reducing attack surface with minimal images."
+    },
+    {
+      "id": 42,
+      "session": "Red Hat Hardened Images",
+      "question": "What is the target vulnerability state for Red Hat Hardened Images at release time?",
+      "options": [
+        "Low to moderate vulnerabilities only",
+        "Near-zero known vulnerability states",
+        "Only critical vulnerabilities fixed",
+        "All vulnerabilities will be patched within 30 days"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images aim for 'near-zero' known vulnerability states at image release through swift CVE remediation and rigorous testing.",
+      "hint": "Red Hat aims for virtually no vulnerabilities at release."
+    },
+    {
+      "id": 43,
+      "session": "Red Hat Hardened Images",
+      "question": "What key feature is automatically integrated into Red Hat Hardened Images to provide verifiable proof of image contents?",
+      "options": [
+        "Digital signatures only",
+        "Automated SBOM (Software Bill of Materials)",
+        "Encrypted configuration files",
+        "Blockchain verification"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images include an automated SBOM (Software Bill of Materials) that lists everything inside the image and its origins, providing verifiable proof for security teams.",
+      "hint": "This provides verifiable proof of what's in the image."
+    },
+    {
+      "id": 44,
+      "session": "Red Hat Hardened Images",
+      "question": "How does Red Hat Hardened Images help reduce vendor lock-in?",
+      "options": [
+        "They only run on Red Hat platforms",
+        "They require a specific cloud provider",
+        "They are vendor-neutral and can run on any Linux platform, including container platforms, cloud, or bare metal",
+        "They use a proprietary container format"
+      ],
+      "correct_answer": 2,
+      "explanation": "Red Hat Hardened Images are vendor-neutral and can run on container platforms, cloud, or bare metal, creating flexibility and reducing vendor lock-in.",
+      "hint": "They work on any platform, not just Red Hat."
+    },
+    {
+      "id": 45,
+      "session": "Red Hat Hardened Images",
+      "question": "What is the main benefit of the 'micro-sized' nature of Red Hat Hardened Images?",
+      "options": [
+        "They contain all possible tools and packages for maximum functionality",
+        "They contain only necessary tools and packages, enabling faster deployments and reduced attack surface",
+        "They are encrypted to reduce storage size",
+        "They use advanced compression algorithms"
+      ],
+      "correct_answer": 1,
+      "explanation": "Micro-sized images contain only necessary tools and packages for running applications, which benefits faster deployments, reduced friction between security and development teams, and a smaller attack surface.",
+      "hint": "Smaller images mean faster deployments and less attack surface."
+    },
+    {
+      "id": 46,
+      "session": "Red Hat Hardened Images",
+      "question": "What traditional security process do Red Hat Hardened Images help eliminate?",
+      "options": [
+        "Penetration testing",
+        "Weeks-long auditing processes for security profiles",
+        "Vulnerability scanning",
+        "Compliance reporting"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images have security profiles already applied and validated at creation, removing the need for weeks-long auditing processes.",
+      "hint": "Security profiles are pre-applied, saving audit time."
+    },
+    {
+      "id": 47,
+      "session": "Red Hat Hardened Images",
+      "question": "How does Red Hat Hardened Images help development teams focus their efforts?",
+      "options": [
+        "By providing development tools and IDEs",
+        "By removing the need to investigate image-level vulnerabilities so they can focus on application-level risk",
+        "By automating all code testing",
+        "By providing pre-built application templates"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images remove the need for developers to investigate image-level vulnerabilities, allowing them to focus on application-level risk and ship code faster.",
+      "hint": "Developers can focus on apps, not image vulnerabilities."
+    },
+    {
+      "id": 48,
+      "session": "Red Hat Hardened Images",
+      "question": "What is Red Hat Hardened Images described as in terms of cost and vendor neutrality?",
+      "options": [
+        "A paid, Red Hat-exclusive service",
+        "A free, vendor-neutral catalog",
+        "An open-source community project",
+        "A premium enterprise-only offering"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images is described as a free, vendor-neutral catalog of trusted container images, accessible to all users.",
+      "hint": "It's available to everyone at no cost."
+    },
+    {
+      "id": 49,
+      "session": "Product Security as a Value Driver",
+      "question": "According to the session, what is shifting left in the SDLC now considered to be?",
+      "options": [
+        "A best practice recommendation",
+        "An optional enhancement",
+        "A regulatory requirement",
+        "A cost-saving measure"
+      ],
+      "correct_answer": 2,
+      "explanation": "Shifting left in the SDLC is now considered a regulatory requirement, not just a best practice, as mandated by regulations like the EU Cyber Resilience Act.",
+      "hint": "It's now mandatory, not optional."
+    },
+    {
+      "id": 50,
+      "session": "Product Security as a Value Driver",
+      "question": "What do nearly 100% of Red Hat deals require in terms of security validation?",
+      "options": [
+        "Source code audits",
+        "Completion of security vendor questionnaires, third party supplier audits, and contract addendums",
+        "On-site security assessments",
+        "Annual penetration testing"
+      ],
+      "correct_answer": 1,
+      "explanation": "Nearly 100% of all deals require completion of security checks and validations through security vendor questionnaires, third party supplier audits, and contract addendums, making security a baseline expectation.",
+      "hint": "Security questionnaires are nearly universal in sales."
+    },
+    {
+      "id": 51,
+      "session": "Product Security as a Value Driver",
+      "question": "How does Product Security act as a 'Revenue Preserver' according to the session?",
+      "options": [
+        "By reducing operational costs",
+        "By delivery of mandatory regulatory compliance conformity (CRA, DORA, EU AI Act)",
+        "By improving customer satisfaction scores",
+        "By streamlining development processes"
+      ],
+      "correct_answer": 1,
+      "explanation": "Product Security acts as a Revenue Preserver through delivery of mandatory regulatory compliance conformity including CRA, DORA, and EU AI Act requirements.",
+      "hint": "Meeting regulations preserves the ability to sell."
+    },
+    {
+      "id": 52,
+      "session": "Product Security as a Value Driver",
+      "question": "What AI model was mentioned as being able to create novel exploits quickly?",
+      "options": [
+        "ChatGPT",
+        "Mythos",
+        "Claude",
+        "Gemini"
+      ],
+      "correct_answer": 1,
+      "explanation": "Mythos was mentioned as a model that can easily create novel exploits, demonstrating how AI has changed the exploit development landscape.",
+      "hint": "This AI model creates exploits quickly."
+    },
+    {
+      "id": 53,
+      "session": "Product Security as a Value Driver",
+      "question": "Despite AI making exploit creation easier, what remains critical for defense?",
+      "options": [
+        "Faster patching only",
+        "Defense in depth strategies",
+        "Complete network isolation",
+        "Disabling all external access"
+      ],
+      "correct_answer": 1,
+      "explanation": "Defense in depth is still critical. If attackers cannot reach the system to use the exploit, they cannot exploit the system, regardless of how easy exploits are to create.",
+      "hint": "If attackers can't reach the system, exploits don't matter."
+    },
+    {
+      "id": 54,
+      "session": "Product Security as a Value Driver",
+      "question": "What was the exploitation rate for 'Important' severity vulnerabilities in Red Hat products in 2025?",
+      "options": [
+        "0%",
+        "0.03%",
+        "1.52%",
+        "5.2%"
+      ],
+      "correct_answer": 2,
+      "explanation": "The exploitation rate for 'Important' severity vulnerabilities was 1.52% (8 out of 526 discovered), showing that even high-severity issues have relatively low exploitation rates.",
+      "hint": "A small percentage of high-severity issues."
+    },
+    {
+      "id": 55,
+      "session": "Product Security as a Value Driver",
+      "question": "What is one of the four key value areas where Product Security provides 'hidden value'?",
+      "options": [
+        "Marketing and brand awareness",
+        "Direct revenue impact through certifications",
+        "Employee recruitment",
+        "Infrastructure cost reduction"
+      ],
+      "correct_answer": 1,
+      "explanation": "Direct revenue impact through compliance certifications is one of the four key value areas, alongside vulnerability management, secure software development, and regulatory mandates.",
+      "hint": "Certifications directly generate revenue."
+    },
+    {
+      "id": 56,
+      "session": "Product Security as a Value Driver",
+      "question": "What did agentic SDLC workflows help Red Hat achieve in terms of security testing?",
+      "options": [
+        "Elimination of all security testing",
+        "Consistent testing throughout the product portfolio and product lifecycles",
+        "Reduced testing requirements",
+        "Outsourced security validation"
+      ],
+      "correct_answer": 1,
+      "explanation": "Agentic SDLC workflows provide consistent testing throughout the entire product portfolio and product lifecycles, delivering security at scale.",
+      "hint": "Agentic workflows ensure uniform security quality."
+    },
+    {
+      "id": 57,
+      "session": "Product Security as a Value Driver",
+      "question": "How many critical severity vulnerabilities were known to be exploited in Red Hat products in 2025?",
+      "options": [
+        "0",
+        "3",
+        "8",
+        "12"
+      ],
+      "correct_answer": 0,
+      "explanation": "Zero critical severity vulnerabilities were known to be exploited in 2025, despite 3 being discovered, demonstrating the effectiveness of Red Hat's security approach.",
+      "hint": "Despite being found, none were exploited."
+    },
+    {
+      "id": 58,
+      "session": "Product Security as a Value Driver",
+      "question": "What certification activities were specifically mentioned as revenue drivers?",
+      "options": [
+        "ISO 9001 and SOC 2",
+        "IRAP, ISO 42001, and PCI-DSS",
+        "HIPAA and FedRAMP",
+        "GDPR and CCPA"
+      ],
+      "correct_answer": 1,
+      "explanation": "IRAP, ISO 42001, and PCI-DSS certifications were specifically mentioned as revenue drivers through Product Security's certification activities.",
+      "hint": "These are specific certification programs mentioned."
+    },
+    {
+      "id": 59,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How long did Orientation take under the manual workflow versus agentic workflow?",
+      "options": [
+        "~4 hours manually vs ~2 minutes with agentic",
+        "~2 hours manually vs ~65 seconds with agentic",
+        "~1 day manually vs ~10 minutes with agentic",
+        "~30 minutes manually vs ~5 seconds with agentic"
+      ],
+      "correct_answer": 1,
+      "explanation": "Orientation took approximately 2 hours manually but only about 65 seconds with agentic workflows, demonstrating dramatic time savings.",
+      "hint": "From hours to seconds for onboarding."
+    },
+    {
+      "id": 60,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How long did DAST (Dynamic Application Security Testing) generation take with agentic workflows?",
+      "options": [
+        "~5 minutes",
+        "~30 minutes",
+        "~84 seconds",
+        "~2 hours"
+      ],
+      "correct_answer": 2,
+      "explanation": "DAST generation took approximately 84 seconds with agentic workflows, down from 6 hours manually.",
+      "hint": "DAST generation is dramatically faster with AI."
+    },
+    {
+      "id": 61,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What workflow orchestration tools does Red Hat use to trigger automated agentic workflows?",
+      "options": [
+        "Jenkins and Bamboo",
+        "Argo and GitLab",
+        "CircleCI and Travis",
+        "Azure DevOps and GitHub Actions"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat uses Argo and GitLab for workflow orchestration to trigger automated agentic workflows.",
+      "hint": "Red Hat uses these orchestration platforms."
+    },
+    {
+      "id": 62,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How many agents are in the Threat Modeling swarm?",
+      "options": [
+        "3 agents",
+        "5 agents",
+        "8 agents",
+        "12 agents"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Threat Modeling swarm consists of 8 agents working together to perform comprehensive threat modeling.",
+      "hint": "Threat modeling uses a larger team of agents."
+    },
+    {
+      "id": 63,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What is a key benefit of agentic workflows for customers as their Red Hat footprint expands?",
+      "options": [
+        "Lower licensing costs",
+        "Security coverage scales automatically with no gaps",
+        "Reduced hardware requirements",
+        "Simplified user interfaces"
+      ],
+      "correct_answer": 1,
+      "explanation": "As customers expand their Red Hat footprint, security coverage scales automatically with no gaps, ensuring consistent protection across their growing infrastructure.",
+      "hint": "Security grows automatically with infrastructure."
+    },
+    {
+      "id": 64,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What principle ensures agentic workflows remain trustworthy?",
+      "options": [
+        "Complete automation with no human involvement",
+        "Automation at scale with human oversight and validation",
+        "Manual review of every decision",
+        "AI-only decision making"
+      ],
+      "correct_answer": 1,
+      "explanation": "The key principle is automation at scale with human oversight and validation, ensuring AI-driven processes are human-validated for trustworthiness.",
+      "hint": "Human validation ensures AI decisions are trustworthy."
+    },
+    {
+      "id": 65,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How many agents are in the Onboarding swarm?",
+      "options": [
+        "2 agents",
+        "5 agents",
+        "8 agents",
+        "10 agents"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Onboarding swarm consists of 5 agents working together to onboard new products into the security workflow.",
+      "hint": "Onboarding uses a specific number of agents."
+    },
+    {
+      "id": 66,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What does 'enhanced detection' in agentic workflows enable?",
+      "options": [
+        "Faster network speeds",
+        "Deployed products are more hardened and resistant to vulnerabilities",
+        "Reduced storage requirements",
+        "Simplified user training"
+      ],
+      "correct_answer": 1,
+      "explanation": "Enhanced detection through agentic workflows means security gaps are identified early, resulting in deployed products that are more hardened and resistant to vulnerabilities.",
+      "hint": "Finding issues early means better deployed products."
+    },
+    {
+      "id": 67,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What type of visibility do customers get into Red Hat's security posture?",
+      "options": [
+        "Quarterly security reports only",
+        "Full visibility through open vulnerability data, open tools, and open advisories",
+        "On-request access with NDA",
+        "Executive summaries only"
+      ],
+      "correct_answer": 1,
+      "explanation": "Customers get full visibility into Red Hat's security posture through open vulnerability data, open tools, and open advisories, allowing them to verify claims rather than just trust them.",
+      "hint": "Everything is open for verification."
+    },
+    {
+      "id": 68,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "How many agents are involved in Pentesting workflows?",
+      "options": [
+        "2 agents",
+        "3 agents",
+        "5 agents",
+        "8 agents"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Pentesting workflow involves 3 agents working together to perform penetration testing activities.",
+      "hint": "Pentesting uses a small focused team."
+    },
+    {
+      "id": 69,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What was the time reduction for Threat Modeling when using agentic workflows?",
+      "options": [
+        "From 1-2 days to 1 hour",
+        "From 2-4.5 hours to ~50 minutes",
+        "From 6 hours to 15 minutes",
+        "From 1 week to 2 hours"
+      ],
+      "correct_answer": 1,
+      "explanation": "Threat Modeling was reduced from 2-4.5 hours manually to approximately 50 minutes with agentic workflows.",
+      "hint": "Still measured in minutes, but faster than manual."
+    },
+    {
+      "id": 70,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What benefit do automated engineering handoffs provide in agentic workflows?",
+      "options": [
+        "Eliminated need for engineers",
+        "Reduced remediation time",
+        "Lower cloud costs",
+        "Simplified documentation"
+      ],
+      "correct_answer": 1,
+      "explanation": "Automated engineering handoffs in agentic workflows reduce remediation time by streamlining the process of getting issues to the right engineers for fixing.",
+      "hint": "Automation speeds up the fix process."
+    },
+    {
+      "id": 71,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "Which swarm has the same number of agents as the Architecture swarm?",
+      "options": [
+        "Onboarding swarm",
+        "Threat Modeling swarm",
+        "SAST swarm",
+        "Pentesting swarm"
+      ],
+      "correct_answer": 1,
+      "explanation": "Both the Threat Modeling swarm and Architecture swarm consist of 8 agents each.",
+      "hint": "Two swarms share the same size."
+    },
+    {
+      "id": 72,
+      "session": "Proactive Security (Secure SDLC)",
+      "question": "What enables 'every product, same security bar' across Red Hat's portfolio?",
+      "options": [
+        "Manual review of each product",
+        "Consistent automated testing through agentic workflows",
+        "Third-party security audits",
+        "Dedicated security teams per product"
+      ],
+      "correct_answer": 1,
+      "explanation": "Consistent automated testing through agentic workflows ensures every product\u2014whether RHEL, OpenShift, or Ansible\u2014receives the same rigorous security treatment.",
+      "hint": "Automation ensures consistency everywhere."
+    },
+    {
+      "id": 73,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What format does Red Hat use to publish vulnerability data for automation?",
+      "options": [
+        "PDF and CSV",
+        "CSAF and VEX profiles",
+        "JSON and XML",
+        "YAML and TOML"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat publishes vulnerability data in standard, machine-readable CSAF and VEX (Vulnerability Exploitability eXchange) profiles to enable automated DevSecOps pipelines.",
+      "hint": "Machine-readable formats for automation."
+    },
+    {
+      "id": 74,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What is a key characteristic of Red Hat's 'Important' severity rating?",
+      "options": [
+        "Remote unauthenticated code execution",
+        "Allows local users to gain privileges or authenticated remote users to execute code",
+        "Only affects unlikely configurations",
+        "Minimal security impact"
+      ],
+      "correct_answer": 1,
+      "explanation": "Important severity includes vulnerabilities that allow local users to gain privileges, unauthenticated remote users to view resources, or authenticated remote users to execute arbitrary code.",
+      "hint": "Important includes several privilege escalation scenarios."
+    },
+    {
+      "id": 75,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What does Red Hat's transparency principle state about security data?",
+      "options": [
+        "Security data should be kept confidential",
+        "Only critical vulnerabilities should be disclosed",
+        "Security data should be freely available when reasonable, including designs and source code",
+        "Security information is only for enterprise customers"
+      ],
+      "correct_answer": 2,
+      "explanation": "Red Hat's transparency principle states that security issues and data, including designs, algorithms, and source code, should be freely available when reasonable.",
+      "hint": "Open source principles apply to security too."
+    },
+    {
+      "id": 76,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What ROI does transparent vulnerability management enable for customers?",
+      "options": [
+        "Lower software licensing costs",
+        "Enables automated DevSecOps pipelines",
+        "Reduced training requirements",
+        "Simplified compliance reporting"
+      ],
+      "correct_answer": 1,
+      "explanation": "Transparent vulnerability management in machine-readable formats enables customers to build automated DevSecOps pipelines with absolute certainty.",
+      "hint": "Automation is a key customer benefit."
+    },
+    {
+      "id": 77,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What type of vulnerabilities are classified as 'Moderate' severity?",
+      "options": [
+        "Remote unauthenticated exploits",
+        "Vulnerabilities that are difficult to exploit or exploitable via unlikely configurations",
+        "Local privilege escalation",
+        "Zero-day exploits"
+      ],
+      "correct_answer": 1,
+      "explanation": "Moderate severity vulnerabilities are more difficult to exploit or exploitable via an unlikely configuration, representing a lower practical risk.",
+      "hint": "These are harder to exploit in practice."
+    },
+    {
+      "id": 78,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What does Red Hat's Vulnerability Scanner Certification program ensure?",
+      "options": [
+        "All scanners are free to use",
+        "Third-party scanners use Red Hat's authoritative data",
+        "Scanners work offline",
+        "Automated patching is enabled"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Vulnerability Scanner Certification program ensures that third-party scanners use Red Hat's authoritative vulnerability data, reducing noise and false positives.",
+      "hint": "Certified scanners use authoritative data."
+    },
+    {
+      "id": 79,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "How does Red Hat's expert analysis save customers money?",
+      "options": [
+        "By eliminating all testing",
+        "By reducing testing costs and minimizing patch fatigue",
+        "By providing free security tools",
+        "By automating all deployments"
+      ],
+      "correct_answer": 1,
+      "explanation": "Expert product-specific analysis saves customers testing costs and minimizes patch fatigue by accurately identifying which vulnerabilities truly require attention in their environment.",
+      "hint": "Accurate analysis reduces unnecessary work."
+    },
+    {
+      "id": 80,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What is the ROI of lifecycle-driven remediation through backporting?",
+      "options": [
+        "Faster deployment speeds",
+        "Preserves API/ABI stability and prevents downtime",
+        "Lower storage costs",
+        "Simplified licensing"
+      ],
+      "correct_answer": 1,
+      "explanation": "Lifecycle-driven remediation through backporting preserves API and ABI stability, preventing downtime that would occur from forced major version upgrades.",
+      "hint": "Stability prevents costly downtime."
+    },
+    {
+      "id": 81,
+      "session": "Reactive Security (Vulnerability Management)",
+      "question": "What happens to critical/important vulnerabilities in Red Hat's workflow?",
+      "options": [
+        "They are queued for the next release",
+        "They follow an expedited incident response workflow",
+        "They are handled the same as all vulnerabilities",
+        "They require customer approval before fixing"
+      ],
+      "correct_answer": 1,
+      "explanation": "Critical and Important vulnerabilities follow an expedited incident response workflow with coordinated handling to ensure rapid remediation.",
+      "hint": "High severity gets expedited handling."
+    },
+    {
+      "id": 82,
+      "session": "Project Lightwell",
+      "question": "What ecosystem does Project Lightwell initially focus on?",
+      "options": [
+        "Python ecosystem",
+        "Node.js ecosystem",
+        "Java ecosystem",
+        "Ruby ecosystem"
+      ],
+      "correct_answer": 2,
+      "explanation": "Project Lightwell's initial focus is the Java ecosystem, which is widely used in enterprise and financial applications.",
+      "hint": "The primary focus is enterprise Java."
+    },
+    {
+      "id": 83,
+      "session": "Project Lightwell",
+      "question": "What visualization does Project Lightwell use to show dependency relationships?",
+      "options": [
+        "Pie charts",
+        "Network graphs showing interconnected nodes",
+        "Bar graphs",
+        "Gantt charts"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell uses network graph visualizations with interconnected nodes to show the complex dependency relationships in software supply chains.",
+      "hint": "Visual graphs show dependencies."
+    },
+    {
+      "id": 84,
+      "session": "Project Lightwell",
+      "question": "What type of patches does Project Lightwell provide?",
+      "options": [
+        "Community-contributed patches only",
+        "Enterprise-grade, tested patches",
+        "Beta patches for testing",
+        "Automatic live patches"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell provides enterprise-grade patching that is reliable and tested, ensuring minimal disruption to production systems.",
+      "hint": "Enterprise-grade means tested and reliable."
+    },
+    {
+      "id": 85,
+      "session": "Project Lightwell",
+      "question": "What is a key benefit of Project Lightwell for development teams?",
+      "options": [
+        "Eliminates the need for all testing",
+        "Reduces time to identify vulnerable dependencies",
+        "Provides free cloud hosting",
+        "Automates all code reviews"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell reduces the time needed to identify vulnerable dependencies in complex software portfolios through AI-driven analysis and automated tracking.",
+      "hint": "AI helps find vulnerable dependencies faster."
+    },
+    {
+      "id": 86,
+      "session": "Project Lightwell",
+      "question": "How does Project Lightwell help with transitive dependencies?",
+      "options": [
+        "By eliminating all dependencies",
+        "By providing visibility into dependency chains and identifying vulnerable components",
+        "By replacing all dependencies with Red Hat code",
+        "By ignoring transitive dependencies"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell provides visibility into complex dependency chains, including transitive dependencies, helping identify vulnerable components deep in the supply chain.",
+      "hint": "Visibility into complex dependency chains."
+    },
+    {
+      "id": 87,
+      "session": "Project Lightwell",
+      "question": "What modern software challenge does Project Lightwell address?",
+      "options": [
+        "Applications depending on hundreds or thousands of open source packages",
+        "Lack of programming languages",
+        "Insufficient cloud capacity",
+        "Limited developer tools"
+      ],
+      "correct_answer": 0,
+      "explanation": "Project Lightwell addresses the challenge that modern applications depend on hundreds or thousands of open source packages, making manual vulnerability tracking nearly impossible.",
+      "hint": "Modern apps have hundreds of dependencies."
+    },
+    {
+      "id": 88,
+      "session": "Project Lightwell",
+      "question": "What type of AI capabilities does Project Lightwell incorporate?",
+      "options": [
+        "AI for writing application code",
+        "AI-driven remediation and vulnerability analysis",
+        "AI for project management",
+        "AI for user interface design"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell incorporates AI-driven remediation and intelligent vulnerability analysis to provide automated, smart recommendations for fixing supply chain issues.",
+      "hint": "AI provides smart remediation recommendations."
+    },
+    {
+      "id": 89,
+      "session": "Project Lightwell",
+      "question": "How does Project Lightwell integrate with existing development workflows?",
+      "options": [
+        "It requires replacing all existing tools",
+        "It integrates with CI/CD pipelines and existing tools",
+        "It works only as a standalone application",
+        "It requires manual CSV imports"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell is designed to integrate with CI/CD pipelines and existing development tools, fitting seamlessly into current workflows.",
+      "hint": "It fits into existing CI/CD workflows."
+    },
+    {
+      "id": 90,
+      "session": "Project Lightwell",
+      "question": "What does Project Lightwell help organizations understand about their software?",
+      "options": [
+        "Only the programming languages used",
+        "The complete dependency chain and supply chain risks",
+        "Just the application code",
+        "Only the database schema"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell helps organizations understand their complete software dependency chains and associated supply chain risks through comprehensive visibility and analysis.",
+      "hint": "Complete supply chain visibility."
+    },
+    {
+      "id": 91,
+      "session": "Project Lightwell",
+      "question": "What approach does Project Lightwell take to vulnerability remediation?",
+      "options": [
+        "Wait for upstream fixes only",
+        "Swift CVE remediation with Red Hat tracking upstream sources",
+        "Ignore low-severity issues completely",
+        "Quarterly batch updates"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell provides swift CVE remediation by tracking upstream sources, ensuring timely fixes for dependencies outside Red Hat's traditional product portfolio.",
+      "hint": "Red Hat tracks and fixes upstream issues."
+    },
+    {
+      "id": 92,
+      "session": "Project Lightwell",
+      "question": "What is the main value proposition of Project Lightwell for enterprises?",
+      "options": [
+        "Cheaper software licenses",
+        "Securing the open source supply chain with AI-driven remediation and enterprise-grade patching",
+        "Faster hardware performance",
+        "Simplified user interfaces"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell's value proposition is securing the open source supply chain with AI-driven remediation and enterprise-grade patching for dependencies beyond traditional product portfolios.",
+      "hint": "The tagline captures the core value."
+    },
+    {
+      "id": 93,
+      "session": "Project Lightwell",
+      "question": "Why is SBOM (Software Bill of Materials) essential for Project Lightwell?",
+      "options": [
+        "For licensing compliance only",
+        "It provides an inventory of all components enabling effective security support",
+        "For marketing purposes",
+        "For reducing file sizes"
+      ],
+      "correct_answer": 1,
+      "explanation": "SBOM is essential because it provides a complete inventory of all software components and dependencies, enabling Project Lightwell to deliver effective security support and tracking.",
+      "hint": "SBOM is the foundation for tracking."
+    },
+    {
+      "id": 94,
+      "session": "Project Lightwell",
+      "question": "What colors are used in Project Lightwell's dependency graph visualization?",
+      "options": [
+        "Red and green",
+        "Blue and cyan",
+        "Yellow and orange",
+        "Purple and pink"
+      ],
+      "correct_answer": 1,
+      "explanation": "Project Lightwell's dependency graph visualization uses blue and cyan colored nodes to represent software components and their relationships.",
+      "hint": "The visualization uses specific colors."
+    },
+    {
+      "id": 95,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What is the mission of Red Hat's GRC team?",
+      "options": [
+        "To sell compliance services",
+        "The foundation of consistent policy enforcement and risk oversight across Global Engineering",
+        "To audit customers",
+        "To develop new regulations"
+      ],
+      "correct_answer": 1,
+      "explanation": "The GRC team's mission is to serve as the foundation of consistent policy enforcement and risk oversight across Global Engineering.",
+      "hint": "This is about consistent policy enforcement."
+    },
+    {
+      "id": 96,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What is NIS2's purpose?",
+      "options": [
+        "Product certification",
+        "EU cybersecurity risk management",
+        "Financial reporting",
+        "Privacy compliance"
+      ],
+      "correct_answer": 1,
+      "explanation": "NIS2 (Network and Information Security Directive) is focused on EU cybersecurity risk management for essential and important entities.",
+      "hint": "NIS2 focuses on cybersecurity across the EU."
+    },
+    {
+      "id": 97,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "Which sectors are covered under NIS2 as 'Essential Entities'?",
+      "options": [
+        "Retail and hospitality",
+        "Energy, transport, healthcare, digital infrastructure, and public administration",
+        "Education and entertainment",
+        "Agriculture and mining"
+      ],
+      "correct_answer": 1,
+      "explanation": "Essential Entities under NIS2 include energy, transport, healthcare, digital infrastructure, and public administration sectors.",
+      "hint": "Critical infrastructure sectors."
+    },
+    {
+      "id": 98,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What framework does NIS2 map to in Belgium?",
+      "options": [
+        "BelSec Framework",
+        "CyberFundamentals (CyFun)",
+        "Brussels Protocol",
+        "EU-BASE"
+      ],
+      "correct_answer": 1,
+      "explanation": "NIS2 maps to Belgium's CyberFundamentals (CyFun) framework for implementation and compliance.",
+      "hint": "Belgium has its own framework name."
+    },
+    {
+      "id": 99,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What is BSI C5?",
+      "options": [
+        "A German programming language",
+        "A German security baseline for Cloud Service Providers",
+        "A EU encryption standard",
+        "A compliance automation tool"
+      ],
+      "correct_answer": 1,
+      "explanation": "BSI C5 is a German security baseline for Cloud Service Providers (CSPs), largely based on ISO 27001 with sovereignty requirements.",
+      "hint": "A German baseline for cloud providers."
+    },
+    {
+      "id": 100,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What is the current status of Red Hat's BSI C5 attestation?",
+      "options": [
+        "Completed",
+        "In progress",
+        "Currently blocked",
+        "Not planned"
+      ],
+      "correct_answer": 2,
+      "explanation": "BSI C5 attestation is currently blocked, and the session called for visibility on deals blocked by lack of this certification.",
+      "hint": "There's a known blocker for this certification."
+    },
+    {
+      "id": 101,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What tool does Red Hat provide for automated compliance verification?",
+      "options": [
+        "Compliance Manager",
+        "Compliance Operator",
+        "CompliBot",
+        "Audit Engine"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat provides the Compliance Operator as one of the tools for automated compliance verification and reporting.",
+      "hint": "Red Hat provides automation tools."
+    },
+    {
+      "id": 102,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "What US framework is the Minimum Cyber Security Standard conceptually similar to?",
+      "options": [
+        "HIPAA",
+        "SOX",
+        "NIST frameworks",
+        "PCI-DSS"
+      ],
+      "correct_answer": 2,
+      "explanation": "The Minimum Cyber Security Standard is conceptually similar to US NIST frameworks like NIST SP 800-53 and NIST SP 800-171.",
+      "hint": "Similar to US security standards."
+    },
+    {
+      "id": 103,
+      "session": "Governance, Risk, and Compliance (GRC)",
+      "question": "Under CRA, when do vulnerability reporting requirements begin?",
+      "options": [
+        "January 17, 2025",
+        "September 11, 2026",
+        "December 11, 2027",
+        "January 1, 2028"
+      ],
+      "correct_answer": 1,
+      "explanation": "CRA vulnerability reporting requirements begin on September 11, 2026, before the full mandatory compliance date.",
+      "hint": "Reporting starts before full compliance."
+    },
+    {
+      "id": 104,
+      "session": "Digital Sovereignty",
+      "question": "What happened to UniSuper in the Google Cloud incident mentioned in the session?",
+      "options": [
+        "Data was encrypted and held for ransom",
+        "Google accidentally deleted their entire cloud account due to misconfiguration",
+        "Service was slow for a few hours",
+        "Costs unexpectedly increased"
+      ],
+      "correct_answer": 1,
+      "explanation": "Google accidentally deleted UniSuper's entire cloud account due to misconfiguration, causing half a million fund members to lose access for over a week.",
+      "hint": "A major cloud provider accidentally deleted data."
+    },
+    {
+      "id": 105,
+      "session": "Digital Sovereignty",
+      "question": "According to the session, why can't Microsoft guarantee data sovereignty in France or Europe?",
+      "options": [
+        "Due to technical limitations",
+        "Because the Cloud Act gives US government authority to access data held by US companies regardless of location",
+        "Because they choose not to",
+        "Due to cost constraints"
+      ],
+      "correct_answer": 1,
+      "explanation": "Microsoft admits it cannot guarantee data sovereignty in Europe because the US Cloud Act gives the US government authority to access data held by US companies regardless of where data is physically stored.",
+      "hint": "US law creates sovereignty challenges."
+    },
+    {
+      "id": 106,
+      "session": "Digital Sovereignty",
+      "question": "What is the difference between Digital Autonomy and Digital Sovereignty according to Dutch government definitions?",
+      "options": [
+        "No difference, they are the same",
+        "Autonomy is some independence with managed dependencies; Sovereignty is complete independence from foreign control",
+        "Autonomy is for government only; Sovereignty is for private sector",
+        "Autonomy is technical; Sovereignty is legal"
+      ],
+      "correct_answer": 1,
+      "explanation": "Digital Autonomy means some independence with managed dependencies, while Digital Sovereignty means complete independence from foreign control or influence.",
+      "hint": "The Dutch distinguish between these concepts."
+    },
+    {
+      "id": 107,
+      "session": "Digital Sovereignty",
+      "question": "What percentage of countries are predicted to be locked into region-specific AI platforms by 2027?",
+      "options": [
+        "15%",
+        "25%",
+        "35%",
+        "50%"
+      ],
+      "correct_answer": 2,
+      "explanation": "35% of countries are predicted to be locked into region-specific AI platforms by 2027, creating regional AI lock-in concerns.",
+      "hint": "Over a third of countries face this issue."
+    },
+    {
+      "id": 108,
+      "session": "Digital Sovereignty",
+      "question": "How many categories does the European Commission's Cloud Sovereignty Framework include?",
+      "options": [
+        "Four categories",
+        "Six categories",
+        "Eight categories",
+        "Ten categories"
+      ],
+      "correct_answer": 2,
+      "explanation": "The European Commission's Cloud Sovereignty Framework includes eight categories: Strategic, Legal & Jurisdictional, Data & AI, Operational, Supply Chain, Technology, Security & Compliance, and Environmental.",
+      "hint": "The framework has multiple dimensions."
+    },
+    {
+      "id": 109,
+      "session": "Digital Sovereignty",
+      "question": "What tool does Red Hat offer to help customers assess their digital sovereignty maturity?",
+      "options": [
+        "Sovereignty Scanner",
+        "Digital Sovereignty Readiness Appraisal workshop",
+        "Cloud Independence Audit",
+        "Sovereignty Compliance Report"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat offers a Digital Sovereignty Readiness Appraisal workshop (1-3 hours) to help customers assess their sovereignty maturity across multiple dimensions.",
+      "hint": "Red Hat offers assessment workshops."
+    },
+    {
+      "id": 110,
+      "session": "Digital Sovereignty",
+      "question": "What is the Digital Sovereignty Escape Room?",
+      "options": [
+        "A physical security training facility",
+        "An interactive gamified learning experience to understand sovereignty concepts",
+        "A cloud migration tool",
+        "A compliance certification program"
+      ],
+      "correct_answer": 1,
+      "explanation": "The Digital Sovereignty Escape Room is an interactive, gamified learning experience that transforms abstract sovereignty concepts into actionable insights.",
+      "hint": "It's a gamified learning experience."
+    },
+    {
+      "id": 111,
+      "session": "Digital Sovereignty",
+      "question": "What visualization is produced from the Digital Sovereignty Readiness Assessment?",
+      "options": [
+        "Bar chart",
+        "Spider/radar chart showing sovereignty dimensions",
+        "Pie chart",
+        "Timeline"
+      ],
+      "correct_answer": 1,
+      "explanation": "The assessment produces a spider/radar chart visualization showing weighted scoring across all sovereignty dimensions, helping identify strengths and gaps.",
+      "hint": "A radar chart shows multiple dimensions."
+    },
+    {
+      "id": 112,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Is CSS-EU support available in multiple languages?",
+      "options": [
+        "Yes, in all EU languages",
+        "No, English only",
+        "Yes, in the top 5 EU languages",
+        "Yes, but requires additional fees"
+      ],
+      "correct_answer": 1,
+      "explanation": "CSS-EU support is English only, not multilingual support. This is an important clarification about what CSS-EU is NOT.",
+      "hint": "CSS is English-language only."
+    },
+    {
+      "id": 113,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "How does CSS enable a small team to deliver trusted support at scale?",
+      "options": [
+        "By limiting the number of customers",
+        "Through the mirror case model that allows collaboration with broader GSS while protecting sensitive data",
+        "By outsourcing to third parties",
+        "By using only automated responses"
+      ],
+      "correct_answer": 1,
+      "explanation": "The mirror case model allows a small vetted CSS team to protect customer trust while tapping into the full depth of Red Hat's global expertise through sanitized collaboration.",
+      "hint": "Mirror cases enable scalable collaboration."
+    },
+    {
+      "id": 114,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What are the four data categories in CSS's data handling model?",
+      "options": [
+        "Public, Private, Secret, Top Secret",
+        "Support Case Data, Red Hat Provided Data, Customer Uploaded Data, Customer Account Data",
+        "Technical, Financial, Personal, Operational",
+        "Internal, External, Confidential, Restricted"
+      ],
+      "correct_answer": 1,
+      "explanation": "CSS categorizes data into four types: Support Case Data, Red Hat Provided Data, Customer Uploaded Data, and Customer Account Data, each with specific handling procedures.",
+      "hint": "Four distinct data categories."
+    },
+    {
+      "id": 115,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Where is CSS support infrastructure being considered for the EU?",
+      "options": [
+        "London and Paris",
+        "Brno and Ireland",
+        "Berlin and Madrid",
+        "Stockholm and Copenhagen"
+      ],
+      "correct_answer": 1,
+      "explanation": "Examples given for establishing a secure EU hub for CSS support include Brno (Czech Republic) and Ireland.",
+      "hint": "EU locations being considered."
+    },
+    {
+      "id": 116,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "How is CSS sold to customers?",
+      "options": [
+        "As a custom contract only",
+        "As a SKU similar to standard and premium support SKUs",
+        "Through partner channels only",
+        "As part of all enterprise agreements"
+      ],
+      "correct_answer": 1,
+      "explanation": "CSS is sold as a SKU similar to standard and premium support SKUs, making it easier for delivery and discounting within normal sales processes.",
+      "hint": "Sold like other support tiers."
+    },
+    {
+      "id": 117,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What happens to customer data when a mirror case is created in CSS?",
+      "options": [
+        "All data is copied to global systems",
+        "Original sensitive data stays with CSS; only sanitized data goes to the mirror case",
+        "Data is encrypted and sent to the US",
+        "Data is deleted after 30 days"
+      ],
+      "correct_answer": 1,
+      "explanation": "When a mirror case is created, the original sensitive data remains restricted with CSS engineers; only sanitized, scrubbed data is shared in the mirror case for broader collaboration.",
+      "hint": "Only sanitized data leaves CSS control."
+    },
+    {
+      "id": 118,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Why does CSS use the sos-cleaner tool before creating mirror cases?",
+      "options": [
+        "To compress files",
+        "To remove personally identifiable information and reduce risk while preserving technical value",
+        "To encrypt data",
+        "To translate technical terms"
+      ],
+      "correct_answer": 1,
+      "explanation": "The sos-cleaner tool thoroughly scrubs sensitive customer data and removes personally identifiable information, reducing risk while preserving the technical value needed for troubleshooting.",
+      "hint": "The tool protects sensitive information."
+    },
+    {
+      "id": 119,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "What service level does CSS provide compared to standard support?",
+      "options": [
+        "Lower, more basic support",
+        "Same as standard support",
+        "Premium, high-touch TAM-like experience",
+        "Self-service only"
+      ],
+      "correct_answer": 2,
+      "explanation": "CSS provides a premium, high-touch experience similar to TAM (Technical Account Manager) support while maintaining GSS reliability and efficiency.",
+      "hint": "Premium service quality."
+    },
+    {
+      "id": 120,
+      "session": "Confirmed Sovereign Support (CSS)",
+      "question": "Which region will get CSS expansion after the EU launch?",
+      "options": [
+        "North America",
+        "Australia/New Zealand (APAC)",
+        "South America",
+        "Middle East"
+      ],
+      "correct_answer": 1,
+      "explanation": "Australia/New Zealand (APAC region) is targeted for CSS expansion after EU, which will help provide complete 24-hour global coverage.",
+      "hint": "APAC enables global coverage."
+    },
+    {
+      "id": 121,
+      "session": "Red Hat Hardened Images",
+      "question": "What is the tagline for Red Hat Hardened Images?",
+      "options": [
+        "Build faster, deploy safer",
+        "Stop chasing scanner noise and start shipping code",
+        "Security first, always",
+        "Enterprise containers made simple"
+      ],
+      "correct_answer": 1,
+      "explanation": "The tagline for Red Hat Hardened Images is 'stop chasing scanner noise and start shipping code,' emphasizing the reduction of security toil.",
+      "hint": "The tagline is about reducing security toil."
+    },
+    {
+      "id": 122,
+      "session": "Red Hat Hardened Images",
+      "question": "How can Red Hat Hardened Images potentially reduce costs?",
+      "options": [
+        "By eliminating licensing fees",
+        "By reducing cloud usage costs and speeding up deployment pipelines through minimal size and efficient pulls",
+        "By replacing all hardware",
+        "By outsourcing development"
+      ],
+      "correct_answer": 1,
+      "explanation": "Hardened Images' minimal size with enhanced layering enables efficient pulls and registry storage, potentially reducing cloud usage costs and speeding up deployment pipelines.",
+      "hint": "Efficiency benefits reduce operational costs."
+    },
+    {
+      "id": 123,
+      "session": "Red Hat Hardened Images",
+      "question": "Where can Red Hat Hardened Images be accessed?",
+      "options": [
+        "Only through Red Hat customer portal",
+        "At images.redhat.com",
+        "Through Docker Hub only",
+        "Via CD-ROM"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images are accessible at images.redhat.com, providing a centralized catalog for all users.",
+      "hint": "A specific Red Hat domain."
+    },
+    {
+      "id": 124,
+      "session": "Red Hat Hardened Images",
+      "question": "What is Fedora Hummingbird Linux?",
+      "options": [
+        "A new desktop operating system",
+        "A free, container-native, rolling Linux OS designed for agent-first builders",
+        "A mobile operating system",
+        "A cloud management platform"
+      ],
+      "correct_answer": 1,
+      "explanation": "Fedora Hummingbird Linux was announced as a new, free, container-native, rolling Linux operating system designed specifically for agent-first builders.",
+      "hint": "A new container-focused OS."
+    },
+    {
+      "id": 125,
+      "session": "Red Hat Hardened Images",
+      "question": "What benefit do validated security profiles provide in Hardened Images?",
+      "options": [
+        "Faster download speeds",
+        "Removes the need for weeks-long auditing processes",
+        "Lower memory usage",
+        "Automatic updates"
+      ],
+      "correct_answer": 1,
+      "explanation": "Security profiles are already applied and validated at creation, removing the need for weeks-long auditing processes that organizations typically perform.",
+      "hint": "Pre-validated profiles save time."
+    },
+    {
+      "id": 126,
+      "session": "Red Hat Hardened Images",
+      "question": "What infrastructure efficiency benefit do Hardened Images provide?",
+      "options": [
+        "Unlimited storage capacity",
+        "Minimal size with enhanced layering for efficient pulls and registry storage",
+        "Faster CPU performance",
+        "Increased RAM allocation"
+      ],
+      "correct_answer": 1,
+      "explanation": "Hardened Images provide infrastructure efficiency through minimal size with enhanced layering, resulting in efficient pulls and reduced registry storage requirements.",
+      "hint": "Smaller size means efficiency."
+    },
+    {
+      "id": 127,
+      "session": "Red Hat Hardened Images",
+      "question": "For which team does Red Hat Hardened Images help reduce 'scanner noise'?",
+      "options": [
+        "Marketing teams",
+        "Security teams",
+        "Sales teams",
+        "HR teams"
+      ],
+      "correct_answer": 1,
+      "explanation": "Red Hat Hardened Images specifically help security teams by reducing scanner noise, allowing them to focus on application-level risk rather than image-level vulnerabilities.",
+      "hint": "Security teams benefit from reduced false positives."
+    }
+  ]
+}
