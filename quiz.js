@@ -309,6 +309,7 @@ class Quiz {
         }
 
         this.displaySessionBreakdown();
+        this.displayIncorrectAnswers();
 
         // Show certificate download option if passed
         const certificateSection = document.getElementById('certificate-section');
@@ -455,6 +456,44 @@ class Quiz {
                 <span class="session-result">${stats.correct} / ${stats.total}</span>
             `;
             sessionScoresDiv.appendChild(sessionDiv);
+        });
+    }
+
+    displayIncorrectAnswers() {
+        const incorrectAnswers = this.userAnswers.filter(answer => !answer.isCorrect);
+        const incorrectSection = document.getElementById('incorrect-answers');
+        const incorrectList = document.getElementById('incorrect-answers-list');
+
+        if (incorrectAnswers.length === 0) {
+            incorrectSection.style.display = 'none';
+            return;
+        }
+
+        incorrectSection.style.display = 'block';
+        incorrectList.innerHTML = '';
+
+        incorrectAnswers.forEach((answer, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'incorrect-answer-item';
+
+            const yourAnswerText = answer.options[answer.selectedAnswer];
+            const correctAnswerText = answer.options[answer.correctAnswer];
+
+            itemDiv.innerHTML = `
+                <div class="incorrect-question">
+                    <strong>Question ${this.userAnswers.indexOf(answer) + 1}:</strong> ${answer.question}
+                </div>
+                <div class="incorrect-answer-details your-incorrect-answer">
+                    <span class="answer-label incorrect">✗ Your Answer:</span>
+                    ${String.fromCharCode(65 + answer.selectedAnswer)}) ${yourAnswerText}
+                </div>
+                <div class="incorrect-answer-details correct-answer-display">
+                    <span class="answer-label correct">✓ Correct Answer:</span>
+                    ${String.fromCharCode(65 + answer.correctAnswer)}) ${correctAnswerText}
+                </div>
+            `;
+
+            incorrectList.appendChild(itemDiv);
         });
     }
 
