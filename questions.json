@@ -275,12 +275,12 @@
       "question": "What are the names of the two open-source projects Red Hat is developing to enable automated, continuous compliance?",
       "options": [
         "AutoComply and RegFlow",
-        "Comply Time and Jamara",
+        "Comply Time and Gamara",
         "ComplianceOS and RegCheck",
         "AuditBot and PolicyEngine"
       ],
       "correct_answer": 1,
-      "explanation": "Comply Time and Jamara are Red Hat's open-source projects for enabling automated, continuous compliance.",
+      "explanation": "Comply Time and Gamara are Red Hat's open-source projects for enabling automated, continuous compliance.",
       "hint": "Two open-source projects working on automation."
     },
     {
